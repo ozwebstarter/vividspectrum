@@ -1,14 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Vividspectrum</title>
+  <title>Colour Consulting</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+    <div id="wrapper">
+        <div id="container">
 
-<%= yield %>
+            <!-------------------------------- HEADER -------------------------------->
 
+            <header>
+                <section id="page-title">
+                    <a href="/home/index"><%= image_tag "vividspectrum-logo.png", size: "450x35", alt: "Vivid Sprectrum" %></a>
+                </section> <!-- id: page-title -->
+                <section id="social">
+                    <a id="facebook" href="www.facebook.com"><%= image_tag "icons/facebook.png", size: "40x40", alt: "facebook" %></a>
+                    <a id="google+" href="plus.google.com"><%= image_tag "icons/google+.png", size: "40x40", alt: "Google Plus" %></a>
+                    <a id="twitter" href="www.twitter.com"><%= image_tag "icons/twitter.png", size: "40x40", alt: "twitter" %></a>
+                    <a id="instagram" href="www.instagram.com"><%= image_tag "icons/instagram.png", size: "40x40", alt: "Instagram" %></a>
+                    <a id="pinterest" href="www.pinterest.com"><%= image_tag "icons/pinterest.png", size: "40x40", alt: "Pinterest" %></a>
+                    <a id="linkedin" href="www.linkedin.com"><%= image_tag "icons/linkedin.png", size: "40x40", alt: "linkedin" %></a>
+                </section> <!-- id: social -->
+            </header>
+
+            <!-------------------------------- GLOBAL NAVIGATION -------------------------------->
+
+            <nav>
+                <section id="nav">
+                    <a id="seasons" href="#">Seasons</a>
+                    <a id="analysis" href="#">Analysis</a>
+                    <a id="wallets" href="#">Wallets</a>
+                    <a id="consultaion" href="#">Consulation<span>(free)</span></a>
+                </section> <!-- id: page-title -->
+                <section id="cart">
+                    <a href="#">Shopping cart is empty<span class="ui-icon ui-icon-locked"></span></a>
+                </section> <!-- id: social -->
+            </nav>
+
+            <!-------------------------------- PAGE SPECIFIC CONTENT RENDERED -------------------------------->
+            <%= yield %>
+
+            <!-------------------------------- FOOTER -------------------------------->
+
+            <footer>
+                <section id="links">
+                    <a href="#">About</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Contact Us</a>
+                </section> <!-- id: links -->
+                <section id="copyright">
+                    <span>&copy; 2014 Vivid Spectrum / powered by: <a href="www.ozwebstarter.com">www.ozwebstarter.com</a></span>
+                </section> <!-- id: links -->
+            </footer>
+
+        </div> <!-- id: container -->
+    </div> <!-- id: wrapper -->
 </body>
 </html>
