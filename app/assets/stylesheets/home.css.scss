@@ -13,8 +13,7 @@ div#container {
       padding-top: 20px;
     }
     section#social {
-      @include span-columns(3);
-      @include shift(2);
+      @include span-columns(5);
       padding-top: 18px;
       text-align: right;
       a {
