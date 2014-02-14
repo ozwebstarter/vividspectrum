@@ -71,13 +71,15 @@ div#container {
     section#enquiry {
       @include box-shadow(0 0 5px 3px hsla(0, 0%, 0%, 0.65));
       position: absolute;
-      top: 80px;
-      left: 20px;
+      top: 85px;
+      left: 30px;
       width: 30%;
       height: 500px;
-      background-color: #ddd;
-      border: 1px solid #aaa;
+      background-color: #ccc;
+      border: none;
       border-radius: 15px;
+      background: rgb(55, 55, 55); /* Fall-back for browsers that don't support rgba */
+      background: rgba(55, 55, 55, .6);
       h4 {
         margin: 20px auto;
         font: bold normal 18px/18px 'Century Gothic W01 bold',Century Gothic,sans-serif;
@@ -88,7 +90,7 @@ div#container {
         margin: 15px auto 0;
         width: 85%;
         font: normal normal 15px/23px 'Century Gothic W01',Century Gothic,sans-serif;
-        color: #333;
+        color: #fff;
       }
       form {
         margin: 0 auto;
@@ -136,7 +138,7 @@ div#container {
         margin-top: 10px;
         width: 100%;
         font: normal normal 13px/1em 'Century Gothic W01',Century Gothic,sans-serif;
-        color: #333;
+        color: #fff;
         text-align: center;
       }
     }
