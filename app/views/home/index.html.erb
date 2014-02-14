@@ -1,7 +1,20 @@
 <!-------------------------------- BANNER -------------------------------->
 
 <section id="banner">
-    <a id="slot1" data-position="1" href=""><%= image_tag "banners/alice.jpg", size: "1088x672", alt: "placeholder" %></a>
+    <%= image_tag "banners/alice.jpg", id: "image", size: "1088x672", alt: "placeholder" %>
+    <section id="enquiry">
+        <h4>Enquire Now - Free Consulation</h4>
+        <p>Speak with a experienced colour consultant.</p>
+        <form action="">
+            <input type="text" id="name" placeholder="Name *"/>
+            <input type="text" id="telephone" placeholder="Phone *"/>
+            <input type="text" id="postcode" placeholder="Postcode *"/>
+            <input type="text" id="email" placeholder="Email *"/>
+            <textarea name="message" id="message" placeholder="Message *"></textarea>
+            <button id="enguiry">Get a Fast Quote Now</button>
+        </form>
+        <h5>We take you privacy seriously</h5>
+    </section> <!-- id: enquiry -->
 </section> <!-- id: banner -->
 
 <!-------------------------------- SEASONS -------------------------------->
